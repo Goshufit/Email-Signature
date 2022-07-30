@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark"> -->
-    <title>Fashion Email Design</title>
+    <title>Promo Email Design</title>
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         /* :root {
             color-scheme: light dark;
             supported-color-schemes: light dark;
@@ -56,11 +55,15 @@
             width: 100%;
             /* Re-enforce the max width */
             max-width: 600px;
-            border-spacing: 0;
             background-color: #ffffff;
-            text-align: center;
+            border-spacing: 0;
+            color: #4a4a4a;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
         @media only screen and (max-width: 600px) {}
 
@@ -75,13 +78,19 @@
     <!-- Center tag makes sure the email is centered in email clients -->
     <center class="wrapper">
 
-        <table class="main" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-<tr>
-    <td>
-        <table></table>
+        <table class="main" width="100%" border="1" cellspacing="0" cellpadding="0" role="presentation" style="max-width: 560px; padding: 20px;">
+        <tr>
+            <td width="30%" style="vertical-align: top;">
+                <img src="https://i.ibb.co/KjSdMvk/resume-pic.jpg" alt="" width="100%" style="min-width: 140px; min-height: 140px;">
+            </td>
+        <td width="70%" style="vertical-align: top; padding: 20px 0 20px 20px;">
+        <h3 style="margin: 0 0 5px; font-size: 20px; color: #e91e53; line-height: 1.2px; font-family: sans-serif;">Jean-Pierre Graham</h3>
+        <h5 style="font-size: 14px; color: #999999; font-family: sans-serif; font-style: italic; margin-top: 15px; margin-bottom: 5px;">Front-End Developer</h5>
+        <div class="line" style="height: 1px; background-color: #e91e53;"></div>
     </td>
-</tr>
-            <!-- Logo and Main Header -->
+        </tr>
+        
         </table>
+        
     </center>
 </body>
