@@ -18,7 +18,7 @@
         /*Margin: 0; allows no spacing at the top or bottom of the email */
         body {
             margin: 0;
-            background-color: #000;
+            /* background-color: #000; */
             /* background: #2d2d2d !important;
             color: #f0f0f0 !important; */
         }
@@ -39,11 +39,11 @@
         .wrapper {
             /* width 100% keeps the tables within the design no matter the screen size */
             width: 100%;
-            background-color: rgb(91, 90, 90);
+            background-color: #ffffff;
             /* fixed makes sure the table layout doesnt display out of parent elements or the center tag */
             table-layout: fixed;
             /* gives spacing tot he bottom of the email template */
-            padding-bottom: 60px;
+            /* padding-bottom: 60px; */
 
         }
 
@@ -67,7 +67,14 @@
 
         @media only screen and (max-width: 600px) {}
 
-        @media only screen and (max-width: 400px) {}
+        @media only screen and (max-width: 400px) {
+
+            .mobfont {
+                font-size: 6vw !important;
+                line-height: 8vw !important;
+            }
+
+        }
     </style>
 </head>
 
@@ -78,19 +85,68 @@
     <!-- Center tag makes sure the email is centered in email clients -->
     <center class="wrapper">
 
-        <table class="main" width="100%" border="1" cellspacing="0" cellpadding="0" role="presentation" style="max-width: 560px; padding: 20px;">
-        <tr>
-            <td width="30%" style="vertical-align: top;">
-                <img src="https://i.ibb.co/KjSdMvk/resume-pic.jpg" alt="" width="100%" style="min-width: 140px; min-height: 140px;">
-            </td>
-        <td width="70%" style="vertical-align: top; padding: 20px 0 20px 20px;">
-        <h3 style="margin: 0 0 5px; font-size: 20px; color: #e91e53; line-height: 1.2px; font-family: sans-serif;">Jean-Pierre Graham</h3>
-        <h5 style="font-size: 14px; color: #999999; font-family: sans-serif; font-style: italic; margin-top: 15px; margin-bottom: 5px;">Front-End Developer</h5>
-        <div class="line" style="height: 1px; background-color: #e91e53;"></div>
-    </td>
-        </tr>
-        
+        <table class="main" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation"
+            style="max-width: 560px; padding: 20px; border: 1px solid #cccccc; background-image: url('https://i.ibb.co/2cPkDrX/bg.png'); background-repeat: no-repeat; background-size: 50px 100%; word-break: break-all;">
+            <tr>
+                <td width="30%" style="vertical-align: top;">
+                    <img src="https://i.ibb.co/KjSdMvk/resume-pic.jpg" alt="" width="100%"
+                        style="min-width: 140px; min-height: 160px;">
+                    <p style="margin-bottom: 0; text-align: right;">
+                        <a href="#">
+                            <img src="https://i.ibb.co/whCWChc/facebook.png" alt="facebook" width="18px" style="display: inline-block; margin-left: 7px;">
+                        </a>
+
+                        <a href="#">
+                            <img src="https://i.ibb.co/vBkhcPX/instagram.png" alt="facebook" width="18px" style="display: inline-block; margin-left: 7px;">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="https://i.ibb.co/9GfW2CC/linkedin.png" alt="facebook" width="18px" style="display: inline-block; margin-left: 7px;">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="https://i.ibb.co/6Wvgndv/twitter.png" alt="facebook" width="18px" style="display: inline-block; margin-left: 7px;">
+                        </a>
+                    </p>
+                </td>
+                <td width="70%" style="vertical-align: top; padding: 20px 0 20px 20px;">
+                    <h3
+                        style="margin: 0 0 5px; font-size: 20px; color: #e91e53; line-height: 1.2px; font-family: sans-serif;" class="mobfont">
+                        Jean-Pierre Graham</h3>
+                    <h5
+                        style="font-size: 14px; color: #999999; font-family: sans-serif; font-style: italic; margin-top: 15px; margin-bottom: 5px;" class="mobfont">
+                        Front-End Developer</h5>
+
+                    <div class="line" style="height: 1px; background-color: #e91e53; margin: 10px 0;"></div>
+
+                    <p
+                        style="margin: 0 0 5px; line-height: 1.2px; font-family: sans-serif; color: #555555; font-size: 14px;" class="mobfont">
+                        <img src="https://i.ibb.co/1Qp7ZHR/placeholder.png" alt="" width="14px"
+                            style="vertical-align: middle; margin-right: 5px; display: inline-block; padding-bottom: 2px;">
+                        Austell, GA , United States
+                    </p>
+                    <p
+                        style="margin: 0 0 5px; line-height: 1.2px; font-family: sans-serif; color: #555555; font-size: 14px;" class="mobfont">
+                        <img src="https://i.ibb.co/YbCqrFh/phone.png" alt="" width="14px"
+                            style="vertical-align: middle; margin-right: 5px; display: inline-block; padding-bottom: 2px;">
+                        470-***-****
+                    </p>
+                    <p
+                        style="margin: 0 0 5px; line-height: 1.2px; font-family: sans-serif; color: #555555; font-size: 14px;" class="mobfont">
+                        <img src="https://i.ibb.co/VjbJ5py/email.png" alt="" width="14px"
+                            style="vertical-align: middle; margin-right: 5px; display: inline-block; padding-bottom: 2px;">
+                        contact@jeanpierregraham.dev
+                    </p>
+                    <p
+                        style="margin: 0 0 5px; line-height: 1.2px; font-family: sans-serif; color: #555555; font-size: 14px;" class="mobfont">
+                        <img src="https://i.ibb.co/T1z3TsJ/wifi.png" alt="" width="14px"
+                            style="vertical-align: middle; margin-right: 5px; display: inline-block; padding-bottom: 2px;">
+                        <a href="https://jeanpierregraham.dev/">jeanpierregraham.dev</a>
+                    </p>
+                </td>
+            </tr>
+
         </table>
-        
+
     </center>
 </body>
